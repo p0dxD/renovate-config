@@ -1,0 +1,23 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+   "config:base",
+   ":preserveSemverRanges",
+   ":dependencyDashboard",
+   ":rebaseStalePrs",
+   ":enableVulnerabilityAlertsWithLabel('security')",
+   "group:recommended"
+  ],
+  "enabledManagers": [
+    "npm"
+  ],
+  "endpoint": "https://api.github.com",
+  "token": "$RENOVATE_GITHUB_TOKEN",
+     "platform": "github",
+     "persistRepoData": true,
+     "logFileLevel": "error",
+     "repositories": [
+         "p0dxd/website"
+     ],
+     "autodiscover": true
+ }
